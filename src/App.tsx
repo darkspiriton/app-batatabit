@@ -1,26 +1,14 @@
 import "./App.scss";
+import Header from './components/header/Header.tsx';
+import Main from './components/main/Main.tsx';
+import Footer from './components/footer/Footer.tsx';
 
 function App() {
   return (
     <>
-      <header>
-        <img src="" alt="" />
-        <div>
-          <h1>La próxima revolución en el intercambio de criptomonedas.</h1>
-          <p>
-            Batatabit te ayuda a navegar entre los diferentes precios y
-            tendencias.
-          </p>
-          <a href="">Conoce Nuestros Planes</a>
-        </div>
-      </header>
-      <main>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-      </main>
-      <footer></footer>
+      <Header></Header>
+      <Main></Main>
+      <Footer></Footer>
     </>
   );
 }
