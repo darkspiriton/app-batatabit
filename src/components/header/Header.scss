@@ -7,6 +7,7 @@ header {
   min-width: 32rem;
   height: 33.4rem;
   text-align: center;
+  background: linear-gradient(208deg, #3a3634 16.69%, #f7931a 100%);
   & img {
     width: 15rem;
     height: 2.4rem;
@@ -21,5 +22,41 @@ header {
     margin-top: 4rem;
     text-align: center;
     align-self: center;
+    & h1 {
+      font-size: 2.4rem;
+      font-weight: bold;
+      line-height: 2.6rem;
+      color: var(--just-white);
+    }
+    & p {
+      margin-top: 2.5rem;
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      font-weight: 500;
+      color: var(--soft-orange);
+    }
+
+    & .header__button {
+      position: absolute;
+      left: calc(50% - 118px);
+      top: 270px;
+      display: block;
+      margin-top: 35px;
+      padding: 15px;
+      width: 229px;
+      height: 48px;
+      background-color: var(--off-white);
+      // /*Sombra*/
+      // box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+      border: none;
+      border-radius: 5px;
+      font-size: 1.4rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: var(--black);
+      & span {
+
+      }
+    }
   }
 }

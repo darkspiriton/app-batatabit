@@ -12,7 +12,7 @@ function Header() {
             tendencias.
           </p>
           <a href="" className="header__button">
-            Conoce Nuestros Planes
+            Conoce Nuestros Planes <span>i</span>
           </a>
         </div>
       </header>
