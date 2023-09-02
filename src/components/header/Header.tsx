@@ -4,7 +4,7 @@ function Header() {
   return (
     <>
       <header>
-        <img src={LogoImg} alt="" />
+        <img src={LogoImg} alt="logo" />
         <div className="header__title-container">
           <h1>La próxima revolución en el intercambio de criptomonedas.</h1>
           <p>
@@ -12,12 +12,11 @@ function Header() {
             tendencias.
           </p>
           <a href="" className="header__button">
-            Conoce Nuestros Planes <span>i</span>
+            Conoce Nuestros Planes <span></span>
           </a>
         </div>
       </header>
     </>
   );
 }
-
 export default Header;
