@@ -169,4 +169,101 @@ main {
       }
     }
   }
+  & .main-product-detail {
+    background-color: var(--black);
+    min-width: 320px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 20px 10px;
+    & .product-detail--batata-logo {
+      position: absolute;
+      top: -12.5px;
+      left: calc(50% - 20.5px);
+      // top: 0%;
+      // left: 50%;
+      // transform: translate(-50%, -50%);
+      display: inline-block;
+      width: 41px;
+      height: 25px;
+      background-image: url("../../assets/imgs/batatabit.svg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    & .product-detail--title {
+      width: 90%;
+      min-width: 280px;
+      height: auto;
+      margin: 0 auto;
+      margin-top: 50px;
+      text-align: center;
+
+      & h2 {
+        margin-bottom: 20px;
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 2.6rem;
+        color: #fff;
+      }
+      & p {
+        color: #808080;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.8rem;
+        margin-bottom: 32px;
+      }
+    }
+    & .product-cards--container {
+      & .product-detail--card {
+        width: 90%;
+        min-width: 288px;
+        max-width: 400px;
+        height: 150px;
+        margin: 15px auto;
+        padding: 15px;
+        background-color: var(--warm-black);
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+        @mixin icon-template {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          margin-bottom: 10px;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        & .clock {
+          @include icon-template();           // display: inline-block;
+          background-image: url("../../assets/icons/clock.svg");
+        }
+        & .eye {
+          @include icon-template();
+          background-image: url("../../assets/icons/eye.svg");
+        }
+        & .dollar {
+          @include icon-template();
+          background-image: url("../../assets/icons/dollar-sign.svg");
+        }
+        & .check {
+          @include icon-template();
+          background-image: url("../../assets/icons/check-circle.svg");
+        }
+        & .product--card-title {
+          margin-bottom: 15px;
+          font-size: 1.8rem;
+          font-weight: bold;
+          line-height: 1.8rem;
+          color: var(--just-white);
+        }
+        & .product--card-body {
+          font-size: 1.4rem;
+          font-weight: 500;
+          line-height: 1.8rem;
+          color: #808080;
+        }
+      }
+    }
+  }
 }
