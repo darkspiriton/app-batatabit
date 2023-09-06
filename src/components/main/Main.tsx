@@ -152,7 +152,9 @@ function Main() {
             </article>
           </section>
         </section>
-        <section></section>
+        <section className="bitcoin-img-container">
+          <h2>Conócelo hoy</h2>
+        </section>
       </main>
     </>
   );
