@@ -11,7 +11,7 @@ function Header() {
             Batatabit te ayuda a navegar entre los diferentes precios y
             tendencias.
           </p>
-          <a href="" className="header__button">
+          <a href="#plans" className="header__button">
             Conoce Nuestros Planes <span></span>
           </a>
         </div>

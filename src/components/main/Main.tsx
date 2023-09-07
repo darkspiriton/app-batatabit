@@ -155,6 +155,29 @@ function Main() {
         <section className="bitcoin-img-container">
           <h2>Conócelo hoy</h2>
         </section>
+        <section id="plans" className="main-plans-container">
+          <div className="plans--title">
+            <h2>Escoge el plan que mejor se ajuste a ti.</h2>
+            <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
+          </div>
+          <section className="plans-container--slider">
+            <article className="plans-container--card">
+              <p className="recomended">Recomendado</p>
+              <div className="plan-info-container">
+                <h3 className="plan-card--title">Pago Anual</h3>
+                <p className="plan-card--price">
+                  <sup>$</sup> 99
+                </p>
+                <p className="plan-card--saving">
+                  *Ahorras $129 comparado al plan mensual.
+                </p>
+                <button className="plan-card--ca">
+                  Escoge este <span></span>
+                </button>
+              </div>
+            </article>
+          </section>
+        </section>
       </main>
     </>
   );
