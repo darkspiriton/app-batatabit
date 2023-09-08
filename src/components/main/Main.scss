@@ -310,16 +310,29 @@ main {
       }
     }
     & .plans-container--slider {
-      position: relative;
-      background-color: var(--just-white);
-      width: 70%;
-      min-width: 230px;
-      max-width: 300px;
-      height: 250px;
-      margin: 50px auto 0;
-      border-radius: 15px;
-      box-shadow: 0px 4px 8px 0px rgba(89, 73, 30, 0.16);
+      display: flex;
+      gap: 30px;
+      height: 316px;
+      overflow-x: scroll;
+      overscroll-behavior-x: contain;
+      scroll-snap-type: x proximity;
       & .plans-container--card {
+        position: relative;
+        scroll-snap-align: center;
+        background-color: var(--just-white);
+        width: 70%;
+        min-width: 230px;
+        max-width: 300px;
+        height: 250px;
+        margin: 50px auto 0;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px 0px rgba(89, 73, 30, 0.16);
+        &:nth-child(1) {
+          margin-left: 30px;
+        }
+        &:nth-child(3) {
+          margin-right: 30px;
+        }
         @mixin flag_type {
           position: absolute;
           display: flex;
@@ -345,11 +358,12 @@ main {
         }
         & .basic {
           @include flag_type();
-          background-color: var(--soft-blue);
+          background-color: #1796f5;
         }
         & .limit {
           @include flag_type();
-          background-color: var(--warm-black);
+          background-color: #bbbbbb;
+          color: var(--black);
         }
         & .plan-info-container {
           & .plan-card--title {

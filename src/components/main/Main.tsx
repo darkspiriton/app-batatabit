@@ -162,11 +162,11 @@ function Main() {
           </div>
           <section className="plans-container--slider">
             <article className="plans-container--card">
-              <p className="recomended">Recomendado</p>
+              <p className="basic">Básico</p>
               <div className="plan-info-container">
-                <h3 className="plan-card--title">Pago Anual</h3>
+                <h3 className="plan-card--title">Pago Mensual</h3>
                 <p className="plan-card--price">
-                  <sup>$</sup> 99
+                  <sup>$</sup> 20
                 </p>
                 <p className="plan-card--saving">
                   *Ahorras $129 comparado al plan mensual.
@@ -176,8 +176,6 @@ function Main() {
                 </button>
               </div>
             </article>
-          </section>
-          <section className="plans-container--slider">
             <article className="plans-container--card">
               <p className="recomended">Recomendado</p>
               <div className="plan-info-container">
@@ -193,14 +191,12 @@ function Main() {
                 </button>
               </div>
             </article>
-          </section>
-          <section className="plans-container--slider">
             <article className="plans-container--card">
-              <p className="recomended">Recomendado</p>
+              <p className="limit">Limitado</p>
               <div className="plan-info-container">
-                <h3 className="plan-card--title">Pago Anual</h3>
+                <h3 className="plan-card--title">Perpetuo</h3>
                 <p className="plan-card--price">
-                  <sup>$</sup> 99
+                  <sup>$</sup> 200
                 </p>
                 <p className="plan-card--saving">
                   *Ahorras $129 comparado al plan mensual.
