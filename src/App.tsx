@@ -1,3 +1,4 @@
+import "./sass/tablet.scss"
 import "./App.scss";
 import Header from './components/header/Header.tsx';
 import Main from './components/main/Main.tsx';

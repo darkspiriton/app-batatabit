@@ -1,8 +1,6 @@
-import { useState } from "react";
 import "./Main.scss";
 
 function Main() {
-  const [showMoney, setShowMoney] = useState<boolean>(true);
   const obtenerFechaHora = () => {
     const ahora = new Date();
     const dia = ahora.toLocaleString("es-ES", { day: "2-digit" });
@@ -18,9 +16,6 @@ function Main() {
 
     return fechaHora;
   };
-  const switchShow = () => {
-    setShowMoney(!showMoney);
-  };
 
   return (
     <>
@@ -34,9 +29,9 @@ function Main() {
               monedas más importantes del mundo.
             </p>
           </div>
-          {showMoney ? (
-            <section className="main__table--container">
-              <div>
+          <section className="main__table--container">
+            <section className="main__table--slider">
+              <article className="main__table--card">
                 <p className="main__table--title orange">Monedas</p>
                 <div className="container_split">
                   <div className="main__grid--container">
@@ -64,46 +59,39 @@ function Main() {
                       <span className="down"></span>
                     </div>
                   </div>
-                  <span className="arrow--right" onClick={switchShow}></span>
                 </div>
                 <p className="main__table--update orange">
                   <span>Actualizado:</span> {obtenerFechaHora()}
                 </p>
-              </div>
-            </section>
-          ) : (
-            <>
-              <section className="main__table--container">
-                <div>
-                  <p className="main__table--title blue">Comisiones</p>
-                  <div className="container_split">
-                    <span className="arrow--left" onClick={switchShow}></span>
-                    <div className="main__grid--container">
-                      <div className="main__grid--child table__top-left">
-                        Bitrade
-                      </div>
-                      <div className="main__grid--child value table__top-right">
-                        12.96
-                      </div>
-                      <div className="main__grid--child">Bitpreco</div>
-                      <div className="main__grid--child value">13.07</div>
-                      <div className="main__grid--child">Novadax</div>
-                      <div className="main__grid--child value">13.15</div>
-                      <div className="main__grid--child table__bottom-left">
-                        Coinext
-                      </div>
-                      <div className="main__grid--child value table__bottom-right">
-                        14.96
-                      </div>
+              </article>
+              <article className="main__table--card">
+                <p className="main__table--title blue">Comisiones</p>
+                <div className="container_split">
+                  <div className="main__grid--container">
+                    <div className="main__grid--child table__top-left">
+                      Bitrade
+                    </div>
+                    <div className="main__grid--child value table__top-right">
+                      12.96
+                    </div>
+                    <div className="main__grid--child">Bitpreco</div>
+                    <div className="main__grid--child value">13.07</div>
+                    <div className="main__grid--child">Novadax</div>
+                    <div className="main__grid--child value">13.15</div>
+                    <div className="main__grid--child table__bottom-left">
+                      Coinext
+                    </div>
+                    <div className="main__grid--child value table__bottom-right">
+                      14.96
                     </div>
                   </div>
-                  <p className="main__table--update blue">
-                    <span>Actualizado:</span> {obtenerFechaHora()}
-                  </p>
                 </div>
-              </section>
-            </>
-          )}
+                <p className="main__table--update blue">
+                  <span>Actualizado:</span> {obtenerFechaHora()}
+                </p>
+              </article>
+            </section>
+          </section>
         </section>
         <section className="main-product-detail">
           <span className="product-detail--batata-logo"></span>
@@ -120,8 +108,6 @@ function Main() {
                 más determinan el comportamiento.
               </p>
             </article>
-          </section>
-          <section className="product-cards--container">
             <article className="product-detail--card">
               <span className="eye"></span>
               <p className="product--card-title">No hay tasas escondidas</p>
@@ -130,8 +116,6 @@ function Main() {
                 el costo real de lo que estás adquiriendo.
               </p>
             </article>
-          </section>
-          <section className="product-cards--container">
             <article className="product-detail--card">
               <span className="dollar"></span>
               <p className="product--card-title">Compara monedas</p>
@@ -140,8 +124,6 @@ function Main() {
                 en el mercado actual.
               </p>
             </article>
-          </section>
-          <section className="product-cards--container">
             <article className="product-detail--card">
               <span className="check"></span>
               <p className="product--card-title">Información confiable</p>

@@ -1,0 +1,16 @@
+@media screen and (min-width: 640px) {
+  .main__table--slider {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 930px) {
+  .plans-container--slider {
+    justify-content: center;
+  }
+  .product-cards--container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    margin: 0 auto;
+  }
+}
